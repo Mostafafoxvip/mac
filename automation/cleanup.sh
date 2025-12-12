@@ -37,8 +37,12 @@ rm -rf /tmp/*
 # تنظيف ذاكرة التخزين المؤقت للنظام (يتطلب صلاحيات)
 echo "  💻 تنظيف ذاكرة التخزين المؤقت للنظام..."
 echo "  💻 Cleaning system cache..."
-sudo rm -rf /Library/Caches/*
-sudo rm -rf ~/Library/Caches/*
+# ملاحظة: تم تعطيل هذا الأمر لأسباب أمنية
+# يمكنك إلغاء التعليق بحذر إذا كنت متأكداً
+# sudo rm -rf /Library/Caches/*
+# sudo rm -rf ~/Library/Caches/*
+echo "  ⚠️  تم تخطي تنظيف ذاكرة التخزين المؤقت للنظام (يتطلب صلاحيات)"
+echo "  ⚠️  Skipped system cache cleanup (requires elevated permissions)"
 
 echo ""
 echo "✨ تمت عملية التنظيف بنجاح!"

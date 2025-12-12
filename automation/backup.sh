@@ -34,7 +34,7 @@ CONFIG_FILES=(
 
 for file in "${CONFIG_FILES[@]}"; do
     if [ -f "$HOME/$file" ]; then
-        cp "$HOME/$file" "$BACKUP_DIR/"
+        cp -p "$HOME/$file" "$BACKUP_DIR/"
         echo "  ✅ تم نسخ $file"
         echo "  ✅ Copied $file"
     fi

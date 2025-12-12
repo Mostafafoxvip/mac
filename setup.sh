@@ -25,9 +25,15 @@ echo "🔍 التحقق من تثبيت Homebrew..."
 echo "🔍 Checking for Homebrew installation..."
 
 if ! command -v brew &> /dev/null; then
-    echo "📦 Homebrew غير مثبت. جاري التثبيت..."
-    echo "📦 Homebrew not found. Installing..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo "📦 Homebrew غير مثبت."
+    echo "📦 Homebrew not found."
+    echo ""
+    echo "⚠️  للتثبيت، يرجى زيارة: https://brew.sh"
+    echo "⚠️  To install, please visit: https://brew.sh"
+    echo ""
+    echo "أو قم بتشغيل الأمر التالي (بحذر):"
+    echo "Or run the following command (with caution):"
+    echo '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
 else
     echo "✅ Homebrew مثبت بالفعل"
     echo "✅ Homebrew already installed"
